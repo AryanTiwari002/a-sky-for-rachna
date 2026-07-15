@@ -1,18 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>A Sky for Rachna</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Sky for Rachna 🌙</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1>A Sky for Rachna 🌙</h1>
-  <p>This is the starter package for your project.</p>
-  <ul>
-    <li>7 clickable stars (to be added next)</li>
-    <li>Moon reveal</li>
-    <li>Ocean background</li>
-  </ul>
-  <script src="script.js"></script>
+
+    <!-- Intro Section -->
+    <div class="intro">
+        <h1>A Sky for Rachna 🌙</h1>
+
+        <p>
+            Some skies are meant for everyone.<br>
+            This one was made for Rachna.
+        </p>
+
+        <p class="instruction">
+            ✨ Follow the stars in order from 1 → 7 ✨
+        </p>
+
+        <button id="musicBtn">
+            🎵 Play Music
+        </button>
+    </div>
+
+    <!-- Progress Counter -->
+    <div id="progress">
+        0 / 7 Stars Discovered
+    </div>
+
+    <!-- Stars -->
+    <div class="star" data-id="1" style="top:18%; left:35%;">
+        1
+    </div>
+
+    <div class="star" data-id="2" style="top:28%; left:63%;">
+        2
+    </div>
+
+    <div class="star" data-id="3" style="top:42%; left:47%;">
+        3
+    </div>
+
+    <div class="star" data-id="4" style="top:22%; left:53%;">
+        4
+    </div>
+
+    <div class="star" data-id="5" style="top:56%; left:15%;">
+        5
+    </div>
+
+    <div class="star" data-id="6" style="top:67%; left:65%;">
+        6
+    </div>
+
+    <div class="star" data-id="7" style="top:42%; left:76%;">
+        7
+    </div>
+
+    <!-- Moon -->
+    <div id="moon">
+        🌕
+    </div>
+
+    <!-- Message Display -->
+    <div id="messageBox"></div>
+
+   <audio id="bgMusic" loop>
+    <source src="music/music.mp3" type="audio/mpeg">
+</audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
